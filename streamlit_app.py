@@ -256,10 +256,10 @@ st.markdown(clean_html(f"""
 
 # Professional Highlights Summary
 highlights_data = [
+    "Analytics Engineer at Wayfair",
+    "Ex-Data Scientist at Carrier Corporation",
     "Data Science graduate student at Rochester Institute of Technology, New York, USA",
-    "Analytics Engineer Co-op at Wayfair",
-    "Ex-Data Scientist Co-op at Carrier Corporation",
-    "Previous Graduate Teaching Assistant at RIT",
+    "Dean's List 2024 at RIT",
     "Bachelor's degree from Indian Institute of Technology Dharwad (IIT Dharwad)",
     "A chess geek who also loves playing Football(Soccer), Badminton, Basketball, Cricket and Ping Pong"
 ]
@@ -292,8 +292,8 @@ render_card(
 # Skills
 render_section_header("Skills & Expertise", "fas fa-laptop-code", "skills")
 skills_data = {
-    "Programming": ["Python", "SQL", "Java", "R", "C++", "JavaScript", "XML", "MATLAB"],
-    "Technologies": ["GCP", "AWS", "Tableau", "Excel", "MySQL", "PowerBI", "Microsoft Office", "Android Studio"],
+    "Programming": ["Python", "SQL", "Java", "R", "C++", "MongoDB", "Neo4j", "JavaScript", "PySpark"],
+    "Technologies": ["GCP", "AWS", "GBQ", "Snowflake", "Airflow", "dbt", "Looker", "Tableau", "Excel", "MySQL", "PowerBI", "Microsoft Office", "Android Studio"],
     "Libraries": ["TensorFlow", "Keras", "Scikit Learn", "OpenCV", "Streamlit", "Seaborn", "plotly", "Pandas", "NumPy", "ggplot2", "Beautiful Soup"]
 }
 render_skills_section(skills_data)
@@ -301,7 +301,7 @@ render_skills_section(skills_data)
 # Experience
 render_section_header("Professional Experience", "fas fa-briefcase", "experience")
 render_card(
-    "Analytics Engineer Co-op",
+    "Analytics Engineer",
     "Wayfair",
     "July 2023 - Present",
     [
@@ -339,7 +339,7 @@ render_card(
     ]
 )
 render_card(
-    "Data Scientist Co-op",
+    "Data Scientist",
     "Carrier Corporation, Pittsford, New York",
     "May 2022 - Nov 2022",
     [
