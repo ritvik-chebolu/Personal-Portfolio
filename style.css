@@ -19,11 +19,14 @@
     --glass-border: rgba(255, 255, 255, 0.05);
 }
 
-/* Base resets for Streamlit */
-.stApp {
+/* Base resets */
+body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -330,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     padding: 0 40px;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .nav-brand {
@@ -361,16 +365,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Adjust main container for top nav */
-.main .block-container {
-    padding-top: 100px !important;
-    max-width: 1200px !important;
+.main-content {
+    padding-top: 100px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
-
-/* Hide Streamlit default header/footer */
-header {visibility: hidden;}
-footer {visibility: hidden;}
-#MainMenu {visibility: hidden;}
 
 /* Section Header */
 .section-header {
@@ -382,7 +383,7 @@ footer {visibility: hidden;}
     display: flex;
     align-items: center;
     gap: 12px;
-    scroll-margin-top: 40px;
+    scroll-margin-top: 100px; /* Offset for sticky nav */
 }
 
 .section-header i {
@@ -521,10 +522,8 @@ footer {visibility: hidden;}
         display: none;
     }
     
-    .main .block-container {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-        padding-top: 40px !important;
+    .main-content {
+        padding-top: 40px;
     }
     
     .hero-container {
