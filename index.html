@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ritvik Chebolu - Portfolio</title>
 
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter & Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,6 +26,9 @@
     <div class="top-nav">
         <a href="#" class="nav-brand">Ritvik Chebolu</a>
         <div class="nav-links">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
             <a href="https://bit.ly/ritvik-chebolu-resume" target="_blank" class="nav-link">Resume</a>
             <a href="#education" class="nav-link">Education</a>
             <a href="#skills" class="nav-link">Skills</a>
@@ -42,16 +47,16 @@
         <div class="hero-container animate-fade-in delay-1">
             <div class="hero-content">
                 <h1 class="hero-name">Ritvik Chebolu</h1>
-                <div class="hero-subtitle animate-slide-up delay-2">Analytics Engineer at Wayfair | M.Sc. in Data
-                    Science</div>
+                <div class="hero-subtitle animate-slide-up delay-2">Analytics Engineer at Wayfair | Data
+                    Science Grad</div>
                 <div class="hero-bio">
                     <ul class="hero-list">
                         <li class="animate-slide-up delay-3"><i class="fas fa-chart-line"></i> 3+ years at Wayfair as an
                             Analytics Engineer in the Pricing/Profitability team.</li>
-                        <li class="animate-slide-up delay-4"><i class="fas fa-graduation-cap"></i> MSc in Data Science
-                            with a minor in Software Engineering from Rochester Institute of Technology.</li>
+                        <li class="animate-slide-up delay-4"><i class="fas fa-graduation-cap"></i> Master's in Data
+                            Science with a minor in Software Engineering from Rochester Institute of Technology.</li>
                         <li class="animate-slide-up delay-5"><i class="fas fa-university"></i> Bachelor's in MechE from
-                            IIT Dharwad.</li>
+                            Indian Institute of Technology Dharwad (IIT Dharwad).</li>
                         <li class="animate-slide-up delay-6"><i class="fas fa-chess"></i> Passionate chess player,
                             athlete, and builder of data-driven forecasting algorithms and analytics workflows.</li>
                     </ul>
@@ -63,19 +68,19 @@
                     <a href="https://github.com/ritvik-chebolu" target="_blank" class="social-button">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://bit.ly/ritvik-chebolu-resume" target="_blank" class="social-button">
+                    <a href="https://bit.ly/resume_ritvik_chebolu" target="_blank" class="social-button">
                         <i class="fas fa-file-pdf"></i> Resume
                     </a>
                     <a href="https://ritvikchebolu.substack.com" target="_blank" class="social-button">
                         <i class="fas fa-pen-nib"></i> Substack
                     </a>
                     <a href="https://twitter.com/ritvikteja" target="_blank" class="social-button">
-                        <i class="fab fa-twitter"></i> Twitter
+                        <i class="fab fa-twitter"></i> X (Twitter)
                     </a>
                 </div>
             </div>
             <div class="hero-avatar-container">
-                <img src="circle_cropped.png" class="hero-avatar" alt="Ritvik Chebolu">
+                <img src="square.jpg" class="hero-avatar" alt="Ritvik Chebolu">
             </div>
         </div>
 
@@ -97,37 +102,43 @@
             <ul style="list-style: none; padding: 0; margin: 0;">
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-graduation-cap"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">Analytics Engineer at
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Analytics Engineer
+                        at
                         Wayfair</span>
                 </li>
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-briefcase"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">Ex-Data Scientist at Carrier
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Ex-Data Scientist
+                        at Carrier
                         Corporation</span>
                 </li>
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-briefcase"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">Data Science graduate student at
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Data Science
+                        graduate student at
                         Rochester Institute of Technology, New York, USA</span>
                 </li>
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-chalkboard-teacher"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">Dean's List 2024 at RIT</span>
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Dean's List 2024
+                        at RIT</span>
                 </li>
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-university"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">Bachelor's degree from Indian
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Bachelor's degree
+                        from Indian
                         Institute of Technology Dharwad (IIT Dharwad)</span>
                 </li>
                 <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
                     <i class="fas fa-chess"
-                        style="color: #6366f1; margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
-                    <span style="color: #a1a1aa; font-size: 0.95rem; line-height: 1.5;">A chess geek who also loves
+                        style="color: var(--accent-indigo); margin-top: 4px; font-size: 1.05rem; width: 20px; text-align: center;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">A chess geek who
+                        also loves
                         playing Football(Soccer), Badminton, Basketball, Cricket and Ping Pong</span>
                 </li>
             </ul>
@@ -916,6 +927,30 @@
 
     </div>
 
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'light') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    </script>
 </body>
 
 </html>
